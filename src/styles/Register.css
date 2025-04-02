@@ -1,0 +1,14 @@
+/* For the primary button */
+.btn-outline-primary:hover {
+    background-color: #007bff !important; /* Same as primary color */
+    border-color: #007bff !important; /* Keep border the same as primary color */
+    color: white !important; /* White text color when hovered */
+  }
+  
+  /* For the secondary button */
+  .btn-outline-secondary:hover {
+    background-color: #007bff !important; /* Same as primary color */
+    border-color: #007bff !important; /* Keep border the same as primary color */
+    color: white !important; /* White text color when hovered */
+  }
+  

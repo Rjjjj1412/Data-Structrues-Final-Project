@@ -1,0 +1,225 @@
+/* Table Styling */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.table thead {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+}
+
+.table tbody tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f3f5;
+  transform: translateY(-2px);
+}
+
+.table th {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+  border-top: 1px solid #dee2e6;
+}
+
+/* Appointment Status Badge */
+.status-pending {
+  color: #fff;
+  background-color: #f39c12 !important; /* Orange for Pending */
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.status-confirmed {
+  color: #fff;
+  background-color: #27ae60 !important; /* Green for Approved/Confirmed */
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.status-completed {
+  color: #fff;
+  background-color: #3498db !important; /* Blue for Completed */
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.status-canceled {
+  color: #fff;
+  background-color: #e74c3c !important; /* Red for Canceled */
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 450px;
+  text-align: center;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* Modal open animation */
+.modal-content {
+  transform: scale(0.95);
+}
+.modal.fade.show .modal-content {
+  transform: scale(1);
+}
+
+/* Overlay for modal */
+.modal.fade.show {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Close button position */
+.modal-header .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #aaa;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-header .close:hover {
+  color: #333;
+}
+
+/* Button styles */
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+/* Style for "Request Appointment" button */
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+/* Center text when no appointments */
+.text-center p.lead {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Appointments List Styles */
+.appointment-list {
+  margin-top: 20px;
+}
+
+.appointment-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.appointment-item:hover {
+  background-color: #ecf0f1;
+  transform: translateY(-5px);
+}
+
+/* Appointment Item Content */
+.appointment-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.appointment-item p {
+  color: #777;
+}
+
+/* Action Button for Appointments */
+.appointment-item .action-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-item .action-btn:hover {
+  background-color: #2980b9;
+}

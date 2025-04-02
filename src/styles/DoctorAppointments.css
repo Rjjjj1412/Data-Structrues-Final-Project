@@ -1,0 +1,104 @@
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .table td {
+    background-color: #ffffff;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Status Badge Styling */
+  .badge {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+  }
+  
+  .badge-warning {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .badge-success {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Container and Header */
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading Text */
+  .text-center {
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .table th, .table td {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  
+    .btn {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
+  }
+  
